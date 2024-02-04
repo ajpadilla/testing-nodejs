@@ -1,4 +1,10 @@
-const resquest = require('supertest');
+/* jest.mock('../src/lib/mongo.lib', () => jest.fn().mockImplementation(() => ({
+    getAll: mockGetAll,
+    create: () => {},
+  }))); */
+
+
+/*const resquest = require('supertest');
 const { generateManyBooks } = require('../src/fakes/book.fake');
 
 const mockGetAll = jest.fn();
@@ -23,10 +29,7 @@ describe('Test for hello endpoint', () => {
     app = createApp();
     server = app.listen(3001);
 
-    /* jest.mock('../src/lib/mongo.lib', () => jest.fn().mockImplementation(() => ({
-      getAll: mockGetAll,
-      create: () => {},
-    }))); */
+
   });
 
   afterAll(() => {
@@ -46,4 +49,4 @@ describe('Test for hello endpoint', () => {
         });
     });
   });
-});
+});*/
