@@ -41,7 +41,7 @@ describe('Test for hello endpoint', () => {
         .get('/api/v1/books')
         .expect(200)
         .then(({ body }) => {
-          console.log(body);
+          //console.log(body);
           expect(body.length).toEqual(fakeBooks.length);
         });
     });
