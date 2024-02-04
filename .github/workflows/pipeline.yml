@@ -19,4 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: ${{ github.workspace }}/examples/api
-
+      - name: Run unit tests
+        run: npm test
+      - name: Run end-to-end tests
+        run: npm run test:e2e
