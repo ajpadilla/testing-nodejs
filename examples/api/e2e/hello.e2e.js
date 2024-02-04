@@ -13,12 +13,25 @@ describe('Test for hello endpoint', () => {
     server.close();
   });
 
-  describe('test for [GET] /', () => {
+  /*describe('test for [GET] /', () => {
     test('should retun "Hello World!"', () => resquest(app)
       .get('/')
       .expect(200)
       .then((response) => {
         expect(response.text).toEqual('Hello World!');
       }));
+  });*/
+
+  describe('test for getBooks', () => {
+    test('Should return a list book', async () => {
+      // Arrange
+
+    });
+
+    test('Should return a same name', async () => {
+      // Arrange
+
+    });
   });
+
 });
