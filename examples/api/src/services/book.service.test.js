@@ -50,3 +50,15 @@ describe('Test for BookService', () => {
     });
   });
 });*/
+
+describe('test for getBooks', () => {
+  test('Should return a list book', async () => {
+    // Arrange
+
+  });
+
+  test('Should return a same name', async () => {
+    // Arrange
+
+  });
+});
