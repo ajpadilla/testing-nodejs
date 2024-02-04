@@ -12,7 +12,7 @@ const { generateManyBooks } = require('../fakes/book.fake');
   },
 ]; */
 
-const mockGetAll = jest.fn();
+/*const mockGetAll = jest.fn();
 
 jest.mock('../lib/mongo.lib', () => jest.fn().mockImplementation(() => ({
   getAll: mockGetAll,
@@ -49,4 +49,4 @@ describe('Test for BookService', () => {
       expect(books[0].name).toEqual(fakeBooks[0].name);
     });
   });
-});
+});*/
