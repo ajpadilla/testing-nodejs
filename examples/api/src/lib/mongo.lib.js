@@ -1,11 +1,13 @@
 const { MongoClient, ObjectId } = require('mongodb');
 const { config } = require('../config');
+const LibInterface = require('./LibInterface');
 
 const DB_NAME = config.dbName;
 const MONGO_URI = config.dbUrl;
 
-class MongoLib {
+class MongoLib  extends LibInterface {
   constructor() {
+    super();
     this.client = new MongoClient(MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

@@ -36,7 +36,7 @@ describe('file-system', () => {
     it('should append a line to file (synchronously)', () => {
       appendToFileSync(localPath, 'second line');
       const contentBuffer = fs.readFileSync(localPath);
-      console.log('content', contentBuffer.toString());
+      //console.log('content', contentBuffer.toString());
       expect(contentBuffer.toString()).toEqual('first line\n second line');
     });
 
